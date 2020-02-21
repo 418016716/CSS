@@ -3,7 +3,9 @@
 */* Todos los párrafos de la pagina */
 p { color: #555; }
  
-/* Solo los párrafos contenidos en #primero */
+/* Solo los párrafos contenidos en #primero 
+#primero hace referencia a la clase
+# pero si esta solo es un id*/
 #primero p { color: #336699; }
  
 /* Todos los enlaces la pagina */
@@ -12,9 +14,12 @@ a { color: #CC3300; }
 /* Los elementos em contenidos en #primero */
 #primero em { background: #FFFFCC; padding: .1em; }
  
-/* Todos los elementos em de tipo especial en toda la pagina */
-em { background: #FFCC99; border: 1px solid #FF9900; padding: .1em; }
+/* Todos los elementos em de tipo especial en toda la pagina
+el padding es el relleno con respecto a otros elementos */
 
+em { background: #FFCC99; border: 1px solid #FF9900; padding: .1em; }
+/* Si no existiera em.especial toma a em generico para todos em, #primero em es independiente  */
+em.especial { color : blueviolet; border: 1px solid #CC3300; }
  
 /* Elementos span contenidos en .normal */
-.normal span { font-weight: bold; }
+.normal p { font-weight: bold; }

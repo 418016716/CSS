@@ -2,7 +2,7 @@
   margin: 40px auto;
   max-width: 800px;
 }
-
+/* define el tamaño de los cuadritos wrap*/
 .wrap {
   width: 150px;
   height: 150px;
@@ -10,7 +10,8 @@
   display: inline-block;
   margin: 100px;
 }
-
+/*Actua sobre todos los elementos con elemento-#
+en el programa estan en un div elemento elemento-#*/
 .element {
   width: 150px;
   height: 150px;
@@ -19,8 +20,8 @@
   text-align: center;
   line-height: 150px;
   -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
 }
 
 .element-1 {
@@ -30,7 +31,8 @@
   transform-origin: center;
  /*-ms-transform: skew(20deg, 10deg);
     -webkit-transform: skew(20deg, 10deg); 
-    transform: skew(30deg, 30deg);*/
+    transform: skew(30deg, 30deg);
+    primeros 4 numeros especifica tamaño ultimos 2 # son x y*/
         -ms-transform: matrix(1, -0.3, 0, 1, 0, 0); 
     -webkit-transform: matrix(1, -0.3, 0, 1, 0, 0); 
     transform: matrix(2, -0.3, 2, 1, 0, 0);

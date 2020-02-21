@@ -9,7 +9,8 @@
     position: relative;
     width: 100px;
     height: 100px;
-    margin:0 auto;
+    /*margin:0 auto;  el cero defina la posicion de la cabecera*/
+    margin:auto;
     content: "";
     left: 50px;
     top: 0;
@@ -17,10 +18,12 @@
     height: 90px;
     background: #ff0000;
     border-radius: 50px 50px 0 0;
+    /*es lo que hace la figura el quitar sus bordes*/
 }
  
-.corazon::before, .corazon::after {
-    position: absolute;
+.corazon::before, .corazon::after { /*Es lo que encima la figura*/
+    position: absolute; /*no se mueve la imagen permanece es su punto se mueve la pagina
+    efecto parallax*/
     content: "";
     left: 50px;
     top: 0;
@@ -29,6 +32,7 @@
     background: #ff0000;
     -moz-border-radius: 50px 50px 0 0;
     border-radius: 50px 50px 0 0;
+    /*Selectores son diferentes dependiendo del navegador web que ocupe */
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
@@ -42,6 +46,7 @@
 }
  
 .corazon::after {
+    /*para la parte del corazon de la derecha*/
     left: 0;
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
@@ -59,5 +64,6 @@
     -moz-transform: scale(2.0);
     -ms-transform: scale(2.0);
     -o-transform: scale(2.0);
+    /*Da el tamaño del segundo corazon transform:*/
     transform: scale(2.5);
 }

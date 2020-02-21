@@ -34,7 +34,9 @@ div.Triangulo {
 width: 0;
 border-left: 200px solid #666278;
 border-right: 200px solid #6d6544;
-border-bottom: 200px solid transparent;
+border-bottom: 200px solid rgb(161, 103, 159);
+/*border-bottom: 200px solid transparent;*/
+
 }
 
 div.Triangulo_inv {
