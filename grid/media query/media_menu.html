@@ -3,8 +3,13 @@
 <head>
 <style>
 .elem {
+
+  /*los colores se definen por hexadecimal; colores predeterminados; rgb con 3 parametros de los colores basicos y por ultimo HSLA luz opacidad (ultimo elemento) 
+  buscar los 2 anteriores*/
     border: solid #6AC5AC 6px;
-    /*HSL stands for hue, saturation, and lightness(tonalidad, saturación y luminosidad)*/
+    color: rgb(219, 219, 48);  
+    /*HSL stands for hue, saturation, and lightness(tonalidad, saturación y luminosidad)
+    ruleta de adove https://color.adobe.com/es/create*/
     background: HSLA(170, 25%, 76%, 1.00);
     position: relative;
 }
@@ -45,6 +50,13 @@ footer {
 div {
     display: block;
 }
+
+/*diseño responsivo
+investigar preprosesadores de css
+https://sass-lang.com/*/
+/*algunos ocupan subdominios donde se ocupa para celulares  es mejor ser responsivo a ocupar dominios ya que el mantenimiento seria a dos pag*/
+
+/*https://getbootstrap.com/ (estudiar y descargar) ya tiee difinidos elementos*/
 @media screen and (min-width:600px) {
   nav {
     float: left;
